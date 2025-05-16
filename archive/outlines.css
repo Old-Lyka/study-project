@@ -1,0 +1,79 @@
+/* Общие стили для всей страницы */
+body {
+  margin: 40px;
+  padding: 20px;
+  min-height: calc(100vh - 120px);
+  background: white;
+  border: 2px dashed lightskyblue;
+  position: relative;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Надпись "HTML" */
+body::before {
+  content: "HTML";
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  background: white;
+  padding: 0 8px;
+  font-size: 14px;
+  color: lightskyblue;
+  z-index: 2;
+}
+
+/* Общие стили для всех блоков */
+header, nav, main, article, footer {
+  position: relative;
+  padding: 15px;
+  margin: 15px;
+  box-sizing: border-box;
+  width: calc(100% - 30px);
+}
+
+/* Специальные настройки высоты */
+main {
+  min-height: 200px;
+}
+
+article {
+  min-height: 80px;
+}
+
+/* Стили рамок */
+header, main, footer {
+  border: 2px solid lightskyblue;
+  background-color: rgba(135, 206, 250, 0.1);
+}
+
+nav, article {
+  border: 2px solid #c8a2c8;
+  background-color: #f5e6fa;
+}
+
+/* Надписи для блоков */
+header::before { content: "header"; }
+nav::before { content: "nav"; }
+main::before { content: "main"; }
+article::before { content: "article"; }
+footer::before { content: "footer"; }
+
+header::before, nav::before, main::before, 
+article::before, footer::before {
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  background: white;
+  padding: 0 5px;
+  font-size: 12px;
+}
+
+/* Цвета надписей */
+header::before, main::before, footer::before {
+  color: lightskyblue;
+}
+
+nav::before, article::before {
+  color: #c8a2c8;
+}
