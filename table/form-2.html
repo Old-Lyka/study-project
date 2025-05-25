@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Подпись для поля ввода. Связка подписи и поля по id</title>
+        <link rel="stylesheet" href="/current/form.css">
+    </head>
+    <body>
+        <h1>Форма входа</h1>
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+                
+                <table>
+                    <tr>
+                        <td>
+                            <label for="login-field"> <!--С помощью <label> создаем подписи к полям. Добавляем тегу <label> атрибут <for>. 
+                                В атрибут <for> записываем такое же значение, что и в атрибуте <id> у поля.-->
+                            Ваш логин
+                            </label>
+                        </td>
+                        <td>
+                          <input type="text" name="login" id="login-field"> <!--Добавляем к полю ввода идентификатор с помощью атрибута id-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password-field">
+                            Ваш пароль
+                            </label>
+                        </td> 
+                        <td>
+                          <input type="password" name="Password" id="password-field">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Отправить">
+                        </td>
+                     </tr>
+                </table>
+            </form>
+            <br>
+            <br>Другие поля
+
+    </body>
+
+
+
+
+
+</html>

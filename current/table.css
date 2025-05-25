@@ -1,5 +1,6 @@
 table {
   border-collapse: collapse;
+  border-spacing: 4px;
   border: 2px solid black;
 }
 
@@ -13,8 +14,12 @@ th {
   padding: 10px;
   border: 1px solid black;
 }
-caption {
-  caption-side: bottom;
-  text-align: left;
 
+caption {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.pink {
+  background-color: pink;
 }
