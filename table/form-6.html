@@ -2,11 +2,11 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Раскрывающийся список или «селект». Мультиселект</title>
+        <title>Раскрывающийся список или «селект». Мультиселект. Поле для загрузки файлов.</title>
         <link rel="stylesheet" href="/current/form-1.css">
     </head>
     <body>
-        <h1>Анкета</h1>
+        <h2>1. Анкета</h2>
             <form action="https://echo.htmlacademy.ru/courses" method="post">
                     <p>Часто выпадающие списки используют для выбора даты.</p>
 
@@ -19,10 +19,10 @@
 
                 <input type="submit" value="Отправить">
             </form>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-                    <p>В Мультиселекте можно выбрать несколько вариантов, щёлкая по ним с зажатой клавишей Ctrl на Windows или Command на MacOS.</p>
-                    <p><i>Любимые дни недели:</i></p>
 
+        <h2>2. В Мультиселекте можно выбрать несколько вариантов, щёлкая по ним с зажатой клавишей Ctrl на Windows или Command на MacOS.</h2>
+                    <p><i>Любимые дни недели:</i></p>
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
                         <select multiple name="days" size="7"> <!--Атрибут "multiple" создает список, в котором можно выбрать не один, а несколько вариантов.-->
                             <option value="1">Понедельник</option> 
                             <option value="2">Вторник</option>
@@ -34,6 +34,17 @@
                         </select>
                         <input type="submit" value="Отправить">
             </form>
+            
+        <h2>3. Профиль</h2>
+            <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+                    <p>Выберите изображение для своего аватара:</p>
+
+
+                        <input type="file" name="Avatar">
+                        <input type="submit" value="Загрузить">
+
+            </form>
+
     </body>
 </html>
 
