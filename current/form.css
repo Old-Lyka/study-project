@@ -5,6 +5,7 @@ table {
 td {
   padding: 10px;
   border: 1px solid #cccccc;
+  color: #040404;
 }
 
 tr:nth-child(n+2) {
